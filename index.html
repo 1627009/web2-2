@@ -6,21 +6,14 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript">
     $(function(){
-      $("#toggle1").on("click",function(){
-        $("#target").fadeOut("slow");
-      });
-    });
-    
-    $(function(){
-      $("#toggle2").on("click",function(){
-        $("#target").fadeIn("slow");
+      $("#toggle").on("click",function(){
+        $("#target").fadeToggle("slow");
       });
     });
   </script>
 </head>
 <body>
   <div id="target">文字が消えたり現れたり</div>
-  <button id="toggle1">フェードイン</button>
-  <button id="toggle2">フェードアウト</button>
+  <button id="toggle">フェードイン</button>
 </body>
 </html>
