@@ -6,14 +6,22 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript">
     $(function(){
-      $("#toggle").on("click",function(){
-        $("#target").fadeOut("slow");
+      $("#toggle1").on("click",function(){
+        $("#target1").fadeOut("slow");
+      });
+    });
+    
+    $(function(){
+      $("toggle2").on("click",function(){
+        $("#target2").fadeIn("slow");
       });
     });
   </script>
 </head>
 <body>
-  <div id="target">フェードアウト</div>
-  <button id="toggle">押してね</button>
+  <div id="target1">フェードアウト</div>
+  <button id="toggle1">押してね</button>
+  <div id="target2">フェードイン</div>
+  <button id="toggle2">押してね</button>
 </body>
 </html>
