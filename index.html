@@ -10,10 +10,17 @@
         $("#target").fadeOut("slow");
       });
     });
+    
+    $(function(){
+      $("#toggle2").on("click",function(){
+        $("#target").fadeIn("slow");
+      });
+    });
   </script>
 </head>
 <body>
-  <div id="target">文字が消える</div>
+  <div id="target">文字が消えるよ</div>
   <button id="toggle1">押してね</button>
+  <button id="toggle2">押してね</button>
 </body>
 </html>
