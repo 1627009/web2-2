@@ -7,23 +7,19 @@
   <script type="text/javascript">
     $(function(){
       $("#toggle1").on("click",function(){
-        $("#target1").fadeOut("slow");
+        $("#target").fadeOut("slow");
       });
     });
-    
-    $("#target2").hide();
-    
     $(function(){
       $("toggle2").on("click",function(){
-        $("#target2").fadeIn("slow");
+        $("#target").fadeIn("slow");
       });
     });
   </script>
 </head>
 <body>
-  <div id="target1">フェードアウト</div>
-  <button id="toggle1">押してね</button>
-  <div id="target2">フェードイン</div>
-  <button id="toggle2">押してね</button>
+  <div id="target">文字が消えたり現れたり</div>
+  <button id="toggle1">フェードアウト</button>
+  <button id="toggle2">フェードイン</button>
 </body>
 </html>
