@@ -8,15 +8,39 @@
     $(function(){
       $("html").css("background-color","#98fb98");
     });
+    
     $(function(){
       $("#toggle").on("click",function(){
         $("#target").fadeToggle("slow");
       });
     });
+    
+    $(function(){
+      $("#animate").click(function(){
+        $(".block").animate(
+          {width:"toggle",opacity:"toggle"},
+          "slow","easeInQuart"
+        );
+       });
+    });
   </script>
+  
+  <style>
+    div{
+      position:absolute;
+      background-color:#abc;
+      left:50px;
+      width:300px;
+      height:90px;
+      margin:5px;
+    }
+  
 </head>
 <body>
   <div id="target">文字が消えたり現れたり</div>
   <button id="toggle">フェードイン/アウト</button>
+  
+  <button id="animate">四角形</button>
+  <div class="block"></div>
 </body>
 </html>
